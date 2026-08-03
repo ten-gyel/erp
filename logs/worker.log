@@ -39878,3 +39878,9 @@ MySQLdb.OperationalError: (2002, "Can't connect to server on '127.0.0.1' (115)")
 2026-08-03 11:52:08,464 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull', 'sche..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='library.localhost', user='Administrator') job in 0:00:00.546770s on worker 8d5553545f484995a7d3d3b21e4d801f
 2026-08-03 11:52:08,464 home-tengyel-frappe-frappe-bench:default: Job OK (library.localhost||scheduled_job||s1kq98d78j)
 2026-08-03 11:52:08,464 Result is kept for 600 seconds
+2026-08-03 12:27:18,306 Worker cb510fdc02e5441dbd79588b9ac4c901: started with PID 71806, version 2.6.1
+2026-08-03 12:27:18,307 Worker cb510fdc02e5441dbd79588b9ac4c901: subscribing to channel rq:pubsub:cb510fdc02e5441dbd79588b9ac4c901
+2026-08-03 12:27:18,310 *** Listening on home-tengyel-frappe-frappe-bench:short, home-tengyel-frappe-frappe-bench:default, home-tengyel-frappe-frappe-bench:long...
+2026-08-03 12:27:18,311 Worker cb510fdc02e5441dbd79588b9ac4c901: cleaning registries for queue: home-tengyel-frappe-frappe-bench:short
+2026-08-03 12:27:18,314 Worker cb510fdc02e5441dbd79588b9ac4c901: cleaning registries for queue: home-tengyel-frappe-frappe-bench:default
+2026-08-03 12:27:18,317 Worker cb510fdc02e5441dbd79588b9ac4c901: cleaning registries for queue: home-tengyel-frappe-frappe-bench:long

@@ -204,3 +204,20 @@
 2026-08-03 11:39:27,138 INFO /home/tengyel/.local/bin/bench serve --port 8000
 2026-08-03 11:39:27,144 INFO /home/tengyel/.local/bin/bench worker
 2026-08-03 11:39:27,155 INFO /home/tengyel/.local/bin/bench schedule
+2026-08-03 12:23:14,823 INFO /home/tengyel/.local/bin/bench build
+2026-08-03 12:25:00,232 INFO /home/tengyel/.local/bin/bench build
+2026-08-03 12:26:33,483 INFO /home/tengyel/.local/bin/bench --site library.localhost list-apps
+2026-08-03 12:26:48,704 INFO /home/tengyel/.local/bin/bench setup requirements
+2026-08-03 12:26:48,714 DEBUG uv pip install --quiet --upgrade pip --python /home/tengyel/frappe/frappe-bench/env/bin/python
+2026-08-03 12:26:50,176 LOG Installing frappe
+2026-08-03 12:26:50,188 DEBUG cd /home/tengyel/frappe/frappe-bench && uv pip install --quiet -e /home/tengyel/frappe/frappe-bench/apps/frappe  --python /home/tengyel/frappe/frappe-bench/env/bin/python
+2026-08-03 12:26:52,196 DEBUG cd /home/tengyel/frappe/frappe-bench/apps/frappe && yarn install --check-files
+2026-08-03 12:26:55,062 LOG Installing rentals
+2026-08-03 12:26:55,062 DEBUG cd /home/tengyel/frappe/frappe-bench && uv pip install --quiet -e /home/tengyel/frappe/frappe-bench/apps/rentals  --python /home/tengyel/frappe/frappe-bench/env/bin/python
+2026-08-03 12:26:57,329 INFO /home/tengyel/.local/bin/bench build
+2026-08-03 12:27:17,342 INFO /home/tengyel/.local/bin/bench start
+2026-08-03 12:27:17,646 INFO /home/tengyel/.local/bin/bench worker
+2026-08-03 12:27:17,647 INFO /home/tengyel/.local/bin/bench socketio
+2026-08-03 12:27:17,655 INFO /home/tengyel/.local/bin/bench watch
+2026-08-03 12:27:17,656 INFO /home/tengyel/.local/bin/bench serve --port 8000
+2026-08-03 12:27:17,667 INFO /home/tengyel/.local/bin/bench schedule

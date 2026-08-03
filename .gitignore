@@ -1,0 +1,44 @@
+# Frappe bench runtime files
+
+# Logs
+logs/
+
+# Process IDs
+config/pids/
+
+# Redis files
+*.rdb
+
+# Environment
+env/
+.venv/
+
+# Node modules
+node_modules/
+
+# Build files
+sites/assets/
+
+# Cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Frappe sites (database + uploaded files)
+sites/*/private/
+sites/*/public/files/
+sites/*/site_config.json
+
+# Bench generated files
+sites/common_site_config.json
+
+# Backups
+sites/*/database.sql.gz
+sites/*/private/backups/
