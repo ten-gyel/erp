@@ -1,0 +1,7 @@
+_HiStOrY_V2_
+tables;
+show\040db
+;
+desc\040tabArticle;
+select\040*\040from\040tabArticle
+;

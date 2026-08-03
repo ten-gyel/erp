@@ -1,0 +1,15 @@
+2026-07-22 16:03:26,317 ERROR frappe New Exception collected in error log
+Site: irfan.cabs
+Form Dict: {'doctype': 'Web Page', 'fields': ['`tabWeb Page`.`name`', '`tabWeb Page`.`owner`', '`tabWeb Page`.`creation`', '`tabWeb Page`.`modified`', '`tabWeb Page`.`modified_by`', '`tabWeb Page`.`_user_tags`', '`tabWeb Page`.`_comments`', '`tabWeb Page`.`_assign`', '`tabWeb Page`.`_liked_by`', '`tabWeb Page`.`docstatus`', '`tabWeb Page`.`idx`', '`tabWeb Page`.`title`', '`tabWeb Page`.`route`', '`tabWeb Page`.`published`'], 'filters': [], 'order_by': '`tabWeb Page`.`creation` desc', 'start': 0, 'page_length': 20, 'view': 'List', 'group_by': None, 'with_comment_count': 1, 'cmd': 'frappe.desk.reportview.get'}
+2026-07-22 16:07:27,388 ERROR frappe New Exception collected in error log
+Site: irfan.cabs
+Form Dict: {'user': 'dorji@gm.sd', 'new_password': '********', 'logout_all_sessions': 1, 'cmd': 'frappe.core.doctype.user.user.change_password'}
+2026-07-22 16:07:37,060 ERROR frappe New Exception collected in error log
+Site: irfan.cabs
+Form Dict: {'user': 'dorji@gm.sd', 'new_password': '********', 'logout_all_sessions': 1, 'cmd': 'frappe.core.doctype.user.user.change_password'}
+2026-07-22 16:07:46,182 ERROR frappe New Exception collected in error log
+Site: irfan.cabs
+Form Dict: {'user': 'dorji@gm.sd', 'new_password': '********', 'logout_all_sessions': 1, 'cmd': 'frappe.core.doctype.user.user.change_password'}
+2026-07-22 16:08:26,286 ERROR frappe New Exception collected in error log
+Site: irfan.cabs
+Form Dict: {'doctype': 'Web Page', 'fields': ['`tabWeb Page`.`name`', '`tabWeb Page`.`owner`', '`tabWeb Page`.`creation`', '`tabWeb Page`.`modified`', '`tabWeb Page`.`modified_by`', '`tabWeb Page`.`_user_tags`', '`tabWeb Page`.`_comments`', '`tabWeb Page`.`_assign`', '`tabWeb Page`.`_liked_by`', '`tabWeb Page`.`docstatus`', '`tabWeb Page`.`idx`', '`tabWeb Page`.`title`', '`tabWeb Page`.`route`', '`tabWeb Page`.`published`'], 'filters': [], 'order_by': '`tabWeb Page`.`creation` desc', 'start': 0, 'page_length': 20, 'view': 'List', 'group_by': None, 'with_comment_count': 1, 'cmd': 'frappe.desk.reportview.get'}

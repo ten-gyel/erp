@@ -1,0 +1,31 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "17.0.0-dev"
+    },
+    "library_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "e1a4841e273a39e60590d3dac012ae38fd247ab9",
+            "branch": "tryBranch"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "rentals": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "502cb6aaafa8705aff5b626368423fb2e6a2df53",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    }
+}

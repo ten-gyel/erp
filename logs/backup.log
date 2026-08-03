@@ -1,0 +1,96 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260714_120004-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-14 12:00:06.578699
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260714_120004-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260714_120004-library_localhost-database.sql.gz 253.2KiB
+Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260716_120001-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-16 12:00:03.082823
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260716_120001-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260716_120001-library_localhost-database.sql.gz 258.2KiB
+Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260720_120004-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-20 12:00:04.724158
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260720_120004-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260720_120004-library_localhost-database.sql.gz 259.2KiB
+Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_275ba12152daf72c --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _275ba12152daf72c | /usr/bin/gzip >> ./irfan.cabs/private/backups/20260722_113002-irfan_cabs-database.sql.gz
+
+Backup Summary for irfan.cabs at 2026-07-22 11:30:05.584921
+Config  : /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260722_113002-irfan_cabs-site_config_backup.json 163.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260722_113002-irfan_cabs-database.sql.gz 248.5KiB
+Backup for Site irfan.cabs has been successfully completed
+File ./library.localhost/private/backups/20260720_120004-library_localhost-site_config_backup.json is older than 23 hours
+File ./library.localhost/private/backups/20260720_120004-library_localhost-database.sql.gz is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260722_120005-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-22 12:00:07.628625
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260722_120005-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260722_120005-library_localhost-database.sql.gz 259.3KiB
+Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_32b78295f6913768 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _32b78295f6913768 | /usr/bin/gzip >> ./cabs.localhost/private/backups/20260724_113004-cabs_localhost-database.sql.gz
+
+Backup Summary for cabs.localhost at 2026-07-24 11:30:06.146961
+Config  : /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260724_113004-cabs_localhost-site_config_backup.json 163.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260724_113004-cabs_localhost-database.sql.gz 244.2KiB
+Backup for Site cabs.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_3555f65c786805a6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3555f65c786805a6 | /usr/bin/gzip >> ./irfan.cabs/private/backups/20260724_120006-irfan_cabs-database.sql.gz
+
+Backup Summary for irfan.cabs at 2026-07-24 12:00:07.675870
+Config  : /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260724_120006-irfan_cabs-site_config_backup.json 163.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260724_120006-irfan_cabs-database.sql.gz 284.3KiB
+Backup for Site irfan.cabs has been successfully completed
+File ./library.localhost/private/backups/20260722_120005-library_localhost-database.sql.gz is older than 23 hours
+File ./library.localhost/private/backups/20260722_120005-library_localhost-site_config_backup.json is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260724_120007-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-24 12:00:09.765660
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260724_120007-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260724_120007-library_localhost-database.sql.gz 259.6KiB
+Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_32b78295f6913768 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _32b78295f6913768 | /usr/bin/gzip >> ./cabs.localhost/private/backups/20260729_113002-cabs_localhost-database.sql.gz
+
+Backup Summary for cabs.localhost at 2026-07-29 11:30:03.166329
+Config  : /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260729_113002-cabs_localhost-site_config_backup.json 163.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260729_113002-cabs_localhost-database.sql.gz 244.2KiB
+Backup for Site cabs.localhost has been successfully completed
+File ./irfan.cabs/private/backups/20260724_120006-irfan_cabs-site_config_backup.json is older than 23 hours
+File ./irfan.cabs/private/backups/20260724_120006-irfan_cabs-database.sql.gz is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3555f65c786805a6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3555f65c786805a6 | /usr/bin/gzip >> ./irfan.cabs/private/backups/20260729_120003-irfan_cabs-database.sql.gz
+
+Backup Summary for irfan.cabs at 2026-07-29 12:00:03.690087
+Config  : /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260729_120003-irfan_cabs-site_config_backup.json 176.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260729_120003-irfan_cabs-database.sql.gz 288.0KiB
+Backup for Site irfan.cabs has been successfully completed
+File ./library.localhost/private/backups/20260724_120007-library_localhost-database.sql.gz is older than 23 hours
+File ./library.localhost/private/backups/20260724_120007-library_localhost-site_config_backup.json is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260729_120003-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-29 12:00:04.453020
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260729_120003-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260729_120003-library_localhost-database.sql.gz 262.6KiB
+Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_32b78295f6913768 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _32b78295f6913768 | /usr/bin/gzip >> ./cabs.localhost/private/backups/20260731_113002-cabs_localhost-database.sql.gz
+
+Backup Summary for cabs.localhost at 2026-07-31 11:30:03.701864
+Config  : /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260731_113002-cabs_localhost-site_config_backup.json 163.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260731_113002-cabs_localhost-database.sql.gz 244.2KiB
+Backup for Site cabs.localhost has been successfully completed
+File ./irfan.cabs/private/backups/20260729_120003-irfan_cabs-site_config_backup.json is older than 23 hours
+File ./irfan.cabs/private/backups/20260729_120003-irfan_cabs-database.sql.gz is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_3555f65c786805a6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3555f65c786805a6 | /usr/bin/gzip >> ./irfan.cabs/private/backups/20260731_120003-irfan_cabs-database.sql.gz
+
+Backup Summary for irfan.cabs at 2026-07-31 12:00:04.659619
+Config  : /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260731_120003-irfan_cabs-site_config_backup.json 176.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/irfan.cabs/private/backups/20260731_120003-irfan_cabs-database.sql.gz 287.4KiB
+Backup for Site irfan.cabs has been successfully completed
+File ./library.localhost/private/backups/20260729_120003-library_localhost-database.sql.gz is older than 23 hours
+File ./library.localhost/private/backups/20260729_120003-library_localhost-site_config_backup.json is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260731_120004-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-07-31 12:00:05.820081
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260731_120004-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260731_120004-library_localhost-database.sql.gz 261.1KiB
+Backup for Site library.localhost has been successfully completed
