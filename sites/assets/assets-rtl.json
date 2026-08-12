@@ -1,11 +1,14 @@
 {
-    "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.RPPBFH4F.css",
-    "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.BVAWAPGW.css",
-    "rtl_leaflet.bundle.css": "/assets/frappe/dist/css-rtl/leaflet.bundle.IJ3IJOMC.css",
-    "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.HRVYNJW3.css",
-    "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.HSMVGQEQ.css",
-    "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.SCSD5WDB.css",
-    "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.I2XPDMTF.css",
-    "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.HIGQSKGT.css",
-    "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.W5FFGALK.css"
+    "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.J6T7365T.css",
+    "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.D5AGFTBC.css",
+    "rtl_leaflet.bundle.css": "/assets/frappe/dist/css-rtl/leaflet.bundle.4OO3MB7F.css",
+    "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.ZNNOBICD.css",
+    "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.W2VS27Y5.css",
+    "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.MGHLRNXL.css",
+    "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.MLJHFQQK.css",
+    "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.7I2WRHG7.css",
+    "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.FRLELMWK.css",
+    "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.RZYL4BNK.css",
+    "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.OVOS4U5G.css",
+    "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.4FVXSKFD.css"
 }

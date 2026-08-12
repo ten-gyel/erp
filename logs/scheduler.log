@@ -112,3 +112,6 @@ Traceback (most recent call last):
     super().__init__(*args, **kwargs2)
     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
 MySQLdb.OperationalError: (1045, "Access denied for user '_3555f65c786805a6'@'localhost' (using password: YES)")
+2026-08-12 10:56:00,934 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for library.localhost
+2026-08-12 11:00:01,040 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for library.localhost
+2026-08-12 11:04:00,077 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for library.localhost
