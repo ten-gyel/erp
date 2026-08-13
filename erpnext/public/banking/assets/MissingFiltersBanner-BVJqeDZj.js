@@ -1,0 +1,1 @@
+import{m as e}from"./vendor-frappe-_pM1tITe.js";import{i as t}from"./typography-OJU6LTZs.js";import{d as n}from"./error-banner-BVhi-T2q.js";var r=e(),i=({text:e,className:i})=>(0,r.jsx)(`div`,{className:n(`min-h-[50vh] flex items-center justify-center`,i),children:(0,r.jsx)(t,{children:e})});export{i as t};
