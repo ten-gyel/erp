@@ -188,3 +188,25 @@ Backup Summary for library.localhost at 2026-08-11 12:00:06.239768
 Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260811_120005-library_localhost-site_config_backup.json 187.0B
 Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260811_120005-library_localhost-database.sql.gz 264.0KiB
 Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_32b78295f6913768 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _32b78295f6913768 | /usr/bin/gzip >> ./cabs.localhost/private/backups/20260812_113004-cabs_localhost-database.sql.gz
+
+Backup Summary for cabs.localhost at 2026-08-12 11:30:06.352285
+Config  : /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260812_113004-cabs_localhost-site_config_backup.json 163.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/cabs.localhost/private/backups/20260812_113004-cabs_localhost-database.sql.gz 244.2KiB
+Backup for Site cabs.localhost has been successfully completed
+File ./library.localhost/private/backups/20260811_120005-library_localhost-site_config_backup.json is older than 23 hours
+File ./library.localhost/private/backups/20260811_120005-library_localhost-database.sql.gz is older than 23 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_05f0a6f57096a907 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _05f0a6f57096a907 | /usr/bin/gzip >> ./library.localhost/private/backups/20260812_120006-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2026-08-12 12:00:08.308419
+Config  : /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260812_120006-library_localhost-site_config_backup.json 187.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/library.localhost/private/backups/20260812_120006-library_localhost-database.sql.gz 264.3KiB
+Backup for Site library.localhost has been successfully completed
+File ./tengyel/private/backups/20260812_110651-tengyel-site_config_backup.json is recent
+File ./tengyel/private/backups/20260812_110651-tengyel-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_3555f65c786805a6 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _3555f65c786805a6 | /usr/bin/gzip >> ./tengyel/private/backups/20260812_120008-tengyel-database.sql.gz
+
+Backup Summary for tengyel at 2026-08-12 12:00:11.331681
+Config  : /home/tengyel/frappe/frappe-bench/sites/tengyel/private/backups/20260812_120008-tengyel-site_config_backup.json 189.0B
+Database: /home/tengyel/frappe/frappe-bench/sites/tengyel/private/backups/20260812_120008-tengyel-database.sql.gz 1.0MiB
+Backup for Site tengyel has been successfully completed

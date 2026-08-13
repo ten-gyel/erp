@@ -6,3 +6,129 @@ ALTER TABLE `tabContact` ADD COLUMN `is_billing_contact` tinyint(4) NOT NULL DEF
 ALTER TABLE `tabCommunication` ADD COLUMN `company` varchar(140)
 2026-08-10 09:41:37,040 WARNING database DDL Query made to DB:
 ALTER TABLE `tabEmail Account` ADD COLUMN `company` varchar(140)
+2026-08-12 13:28:40,663 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `banner_image` text
+2026-08-12 13:28:41,535 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReport` ADD COLUMN `letter_head` varchar(140)
+2026-08-12 13:28:43,701 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocType Layout` ADD COLUMN `route` varchar(140), ADD COLUMN `client_script` longtext
+2026-08-12 13:28:43,725 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocType Layout` DROP INDEX `title`
+2026-08-12 13:28:43,996 WARNING database DDL Query made to DB:
+create table `tabSidebar Item Group Link` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`report` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-12 13:28:44,224 WARNING database DDL Query made to DB:
+create table `tabSidebar Item Group` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`sidebar` varchar(140) UNIQUE,
+`app` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-12 13:28:44,528 WARNING database DDL Query made to DB:
+create table `tabChangelog Feed` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`title` varchar(140),
+`app_name` varchar(140),
+`link` longtext,
+`posting_timestamp` datetime(6),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `posting_timestamp`(`posting_timestamp`),
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-12 13:28:45,026 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOAuth Bearer Token` DROP INDEX `refresh_token`
+2026-08-12 13:28:45,479 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLetter Head` MODIFY `footer_source` varchar(140) DEFAULT 'HTML'
+2026-08-12 13:28:46,961 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubscription` MODIFY `generate_invoice_at` varchar(140) DEFAULT 'End of the current subscription period'
+2026-08-12 13:28:47,831 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Invoice Item` ADD COLUMN `bom` varchar(140)
+2026-08-12 13:28:49,125 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Invoice` ADD COLUMN `is_old_subcontracting_flow` tinyint(4) NOT NULL DEFAULT 0
+2026-08-12 13:28:53,130 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppointment` DROP INDEX `scheduled_time`
+2026-08-12 13:28:53,896 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Order Item` ADD COLUMN `include_exploded_items` tinyint(4) NOT NULL DEFAULT 0
+2026-08-12 13:28:53,925 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Order Item` ADD INDEX `job_card_index`(`job_card`)
+2026-08-12 13:28:54,246 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Order` ADD COLUMN `is_old_subcontracting_flow` tinyint(4) NOT NULL DEFAULT 0
+2026-08-12 13:28:55,033 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier` MODIFY `hold_type` varchar(140)
+2026-08-12 13:28:55,049 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier` DROP INDEX `alias`
+2026-08-12 13:28:55,233 WARNING database DDL Query made to DB:
+create table `tabPurchase Order Item Supplied` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`main_item_code` varchar(140),
+`rm_item_code` varchar(140),
+`stock_uom` varchar(140),
+`reserve_warehouse` varchar(140),
+`conversion_factor` decimal(21,9) NOT NULL DEFAULT 0.0,
+`bom_detail_no` varchar(140),
+`reference_name` varchar(140),
+`rate` decimal(21,9) NOT NULL DEFAULT 0.0,
+`amount` decimal(21,9) NOT NULL DEFAULT 0.0,
+`required_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+`supplied_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+`consumed_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+`returned_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+`total_supplied_qty` decimal(21,9) NOT NULL DEFAULT 0.0,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-12 13:28:55,542 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTimesheet` MODIFY `title` varchar(140) DEFAULT '{employee_name}'
+2026-08-12 13:48:20,226 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Order` ADD COLUMN `branch` varchar(140)
