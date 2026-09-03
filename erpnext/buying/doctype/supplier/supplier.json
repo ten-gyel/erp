@@ -14,6 +14,8 @@
   "supplier_type",
   "supplier_name",
   "gender",
+  "cid_number",
+  "tpn_number",
   "column_break0",
   "supplier_group",
   "country",
@@ -177,10 +179,10 @@
   {
    "default": "Company",
    "fieldname": "supplier_type",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Supplier Type",
-   "options": "Company\nIndividual\nPartnership",
+   "options": "Supplier Type",
    "reqd": 1
   },
   {
@@ -504,6 +506,18 @@
   {
    "fieldname": "column_break_oxjw",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.supplier_type==\"Individual\"",
+   "fieldname": "cid_number",
+   "fieldtype": "Data",
+   "label": "CID Number"
+  },
+  {
+   "fieldname": "tpn_number",
+   "fieldtype": "Data",
+   "label": "TPN Number",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
@@ -517,7 +531,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2026-03-09 17:15:25.465759",
+ "modified": "2026-09-02 16:27:43.885451",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Supplier",

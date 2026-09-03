@@ -39,6 +39,7 @@ class MaterialRequest(BuyingController):
 		amended_from: DF.Link | None
 		auto_created_via_reorder: DF.Check
 		buying_price_list: DF.Link | None
+		cid: DF.Data | None
 		company: DF.Link
 		customer: DF.Link | None
 		items: DF.Table[MaterialRequestItem]

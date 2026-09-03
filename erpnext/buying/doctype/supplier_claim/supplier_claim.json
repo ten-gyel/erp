@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:SC-.YYYY.-",
+ "creation": "2026-09-03 10:26:05.325863",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ypeh",
+  "supplier",
+  "claim_type",
+  "claim_reason",
+  "reference_receipt_no",
+  "item_code",
+  "settlement_method",
+  "amended_from",
+  "naming_series",
+  "claim_quantity",
+  "claim_amount",
+  "supporting_documents",
+  "claim_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ypeh",
+   "fieldtype": "Section Break",
+   "label": "Supplier Claim"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Supplier Claim",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "claim_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Claim Type",
+   "options": "Claim Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "claim_reason",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Claim Reason",
+   "options": "Claim Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_receipt_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reference Receipt No",
+   "options": "Purchase Receipt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "settlement_method",
+   "fieldtype": "Link",
+   "label": "Settlement Method",
+   "options": "Settlement Method",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SC-.YYYY.-"
+  },
+  {
+   "fieldname": "claim_quantity",
+   "fieldtype": "Int",
+   "label": "Claim Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "claim_amount",
+   "fieldtype": "Currency",
+   "label": "Claim Amount (BTN)"
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Attach",
+   "label": "Supporting Documents",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "claim_status",
+   "fieldtype": "Select",
+   "label": "Claim Status",
+   "options": "Draft\nSubmitted\nSettled\nRejected"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-03 11:40:50.592697",
+ "modified_by": "Administrator",
+ "module": "Buying",
+ "name": "Supplier Claim",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

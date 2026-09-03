@@ -19,6 +19,7 @@
   "schedule_date",
   "buying_price_list",
   "amended_from",
+  "cid",
   "warehouse_section",
   "scan_barcode",
   "last_scanned_warehouse",
@@ -371,13 +372,18 @@
    "label": "Auto Created (Reorder)",
    "no_copy": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "cid",
+   "fieldtype": "Data",
+   "label": "CID"
   }
  ],
  "icon": "fa fa-ticket",
  "idx": 70,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-08-13 11:38:12.888060",
+ "modified": "2026-08-13 15:00:46.139758",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Material Request",

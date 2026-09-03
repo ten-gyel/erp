@@ -27,20 +27,16 @@ class Supplier(TransactionBase):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from frappe.types import DF
-
-		from erpnext.accounts.doctype.allowed_to_transact_with.allowed_to_transact_with import (
-			AllowedToTransactWith,
-		)
+		from erpnext.accounts.doctype.allowed_to_transact_with.allowed_to_transact_with import AllowedToTransactWith
 		from erpnext.accounts.doctype.party_account.party_account import PartyAccount
-		from erpnext.buying.doctype.customer_number_at_supplier.customer_number_at_supplier import (
-			CustomerNumberAtSupplier,
-		)
+		from erpnext.buying.doctype.customer_number_at_supplier.customer_number_at_supplier import CustomerNumberAtSupplier
 		from erpnext.utilities.doctype.portal_user.portal_user import PortalUser
+		from frappe.types import DF
 
 		accounts: DF.Table[PartyAccount]
 		allow_purchase_invoice_creation_without_purchase_order: DF.Check
 		allow_purchase_invoice_creation_without_purchase_receipt: DF.Check
+		cid_number: DF.Data | None
 		companies: DF.Table[AllowedToTransactWith]
 		country: DF.Link | None
 		customer_numbers: DF.Table[CustomerNumberAtSupplier]
@@ -71,11 +67,12 @@ class Supplier(TransactionBase):
 		supplier_name: DF.Data
 		supplier_primary_address: DF.Link | None
 		supplier_primary_contact: DF.Link | None
-		supplier_type: DF.Literal["Company", "Individual", "Partnership"]
+		supplier_type: DF.Link
 		tax_category: DF.Link | None
 		tax_id: DF.Data | None
 		tax_withholding_category: DF.Link | None
 		tax_withholding_group: DF.Link | None
+		tpn_number: DF.Data | None
 		warn_pos: DF.Check
 		warn_rfqs: DF.Check
 		website: DF.Data | None
@@ -144,6 +141,7 @@ class Supplier(TransactionBase):
 
 		validate_party_accounts(self)
 		self.validate_internal_supplier()
+		self.validate_cid_number()
 		self.add_role_for_user()
 		self.validate_currency_for_receivable_payable_and_advance_account()
 
@@ -161,6 +159,19 @@ class Supplier(TransactionBase):
 
 		if doc.payment_terms:
 			self.payment_terms = doc.payment_terms
+
+	def validate_cid_number(self):
+		# Skip validation if CID is empty
+		if not self.cid_number:
+			return
+    	
+		# Allow digits only
+		if not self.cid_number.isdigit():
+			frappe.throw(_("CID Number must contain digits only"))
+
+	    # CID must be exactly 11 digits
+		if len(self.cid_number) != 11:
+			frappe.throw(_("CID Number must be exactly 11 digits"))
 
 	def validate_internal_supplier(self):
 		if not self.is_internal_supplier:
